@@ -86,6 +86,7 @@ public class Ibkr2Firekit
                             newResultItem.Comment = "Withholding tax";
                             break;
                         case "Dividends":
+                        case "Payment In Lieu Of Dividends":
                             newResultItem.Operation = "ProfitLoss";
                             newResultItem.Comment = $"Dividends for {cashTransaction.Symbol}";
                             break;
